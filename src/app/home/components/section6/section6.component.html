@@ -1,0 +1,86 @@
+<div id="lp-page-loader" *ngIf="loader"></div>
+<section class="" data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
+    <div class="container">
+        <div class="team spaceBetweensections">
+            <div class="my-container p-3 ">
+              <!-- <img class="logo-2" src=""/> -->
+              <div class="container">
+                <div class="row gy-3 gx-1">
+                    <div >
+                        <h2>
+                            {{'home.what' | translate}}
+
+                        <span class="headingp2">  {{'home.wharnew' | translate}}</span>
+                        </h2>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <p class="info">
+                          {{'home.wharnewlast' | translate}}
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div *ngFor="let item of dataPost" class="col-lg-4">
+                      <div class="col-md-3 col-sm-6 col-10">
+                        <a href="productDetails.html">
+                          <div class="card position-relative">
+                              <img alt="وصف قصير لصورة الصفحة الرئيسية" src="assets/imgs/home-2.jpeg" class="card-img-top">
+                              <button class="fav-btn-icon" aria-label="Add to favorites"><i class="fa-solid fa-heart"></i></button>
+                              <div class="card-body">
+                                  <div class="row">
+                                      <div class="col-8 p-0">
+                                          <p class="fw-600">فستان بناتي 3 قطع</p>
+                                      </div>
+                                      <div class="col-4 p-0 text-end">
+                                          <p class="fw-700">270 SAR</p>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <button class="myBtn">اضف الي عربة التسوق <i
+                                              class="fa-solid fa-cart-shopping"></i></button>
+                                  </div>
+                              </div>
+                          </div>
+                        </a>
+                  </div>
+
+                    </div>
+
+
+
+
+                    <!-- <div class="w-100 d-flex justify-content-center align-items-center">
+                        <a   href="https://www.gulfoilltd.com/products/car" target="_blank"  class="btn btn-more ">{{'home.More' | translate}}</a>
+                    </div> -->
+
+
+
+
+
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="w-100 d-flex justify-content-between bg-section align-items-center  spaceBetweensections sectionBoxShadow">
+            <div>
+<div>
+ <span> {{'home.More2' | translate}}</span>
+</div>
+
+<div>
+ <span>{{'home.More3' | translate}}</span>
+</div>
+            </div>
+
+            <div>
+             <a  routerLink="/contact-us" (click)=" scrollToTop()"   class="btn btn-stayInTouch "> {{'home.More' | translate}} </a>
+            </div>
+         </div>
+    </div>
+
+</section>

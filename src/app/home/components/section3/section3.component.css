@@ -1,0 +1,6 @@
+/* section3.component.css */
+@media screen and (max-width: 750px) {
+  .sec-3 .card-img {
+    width: 100%; /* اجعل عرض الصورة 100% */
+  }
+}

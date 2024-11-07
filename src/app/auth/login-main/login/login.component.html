@@ -1,0 +1,46 @@
+<main id="main">
+  <section class="sec-1 login">
+      <div class="text-center my-auto">
+          <p class="text-main">الرئيسية <span class="text-light">/ حسابي</span></p>
+      </div>
+  </section>
+  <div class="container mb-5">
+      <div class="row justify-content-between">
+          <div [formGroup]="loginForm" class="col-lg-4">
+              <h1 class="text-main">تسجيل الدخول</h1>
+              <label for="name"> الايميل<span class="text-danger">*</span></label>
+              <input type="email" formControlName="email" class="form-control">
+              <app-fieldvalidations [appControl]="this.loginForm.get('email')"
+              labelTest="error">
+              </app-fieldvalidations>
+
+              <label for="name">كلمة السر <span class="text-danger">*</span></label>
+                <div class="input-loign">
+                  <input  [type]="changetype ? 'password' : 'text'" formControlName="password" type="password" class="form-control">
+                  <span class="span-login" (click)="viewpass()" >
+
+                    <i style="font-size: 17px;" [ngClass]="visible ?  'fa fa-eye-slash' :'fa-solid fa-eye'  "></i>
+                  </span>
+                  <app-fieldvalidations [appControl]="this.loginForm.get('password')"
+                  labelTest="error">
+                  </app-fieldvalidations>
+                </div>
+              <div class="row my-2">
+                  <button (click)="add()" class="myBtn">تسجيل الدخول</button>
+              </div>
+              <div class="text-center or-p mt-5">
+                  <span>أو</span>
+              </div>
+          </div>
+          <div class="col-lg-7 p-5 border-right-gray text-center">
+              <h1 class="text-main">انشاء حساب</h1>
+              <p>يتيح لك التسجيل في هذا الموقع الوصول إلى حالة طلبك وتاريخه. ما عليك سوى ملء الحقول أدناه، وسنقوم
+                  بإعداد حساب جديد لك في أسرع وقت. سنطلب منك فقط المعلومات اللازمة لجعل عملية الشراء أسرع وأسهل.
+              </p>
+              <div class="row my-2">
+                  <button class="myBtn">تسجيل الدخول</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</main>

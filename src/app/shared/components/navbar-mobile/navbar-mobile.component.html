@@ -1,0 +1,135 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+<div class="d-flex justify-content-between w-100">
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand  d-flex justify-content-center align-items-center logo d-flex align-items-center" >
+      <img src="assets/images/navbar/logo.png" class="w-100" alt="logo"/>
+    </a>
+
+</div>
+
+<div class="offcanvas offcanvas-end p-3  "  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class=" d-flex justify-content-between align-items-start">
+
+<ul class="navbar-nav me-auto mb-2 mb-lg-0  links w-100 py-2 ">
+
+<li class="nav-item" routerLinkActive="linkActive">
+  <a class="nav-link " aria-current="page" routerLink="/home" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close">{{'home.home' | translate}} </a>
+</li>
+<li class="nav-item dropdown" >
+  <a (click)=" scrollToTop()" class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+    {{'home.about' | translate}}
+  </a>
+
+  <ul class="dropdown-menu text-Align">
+    <li routerLinkActive="linkActive"><a class="dropdown-item" routerLink="/whoWeAre" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close"> {{'home.about' | translate}} </a></li>
+    <li routerLinkActive="linkActive"><a class="dropdown-item"routerLink="/whoWeAre2" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close">  {{'home.history' | translate}}  </a></li>
+    <li routerLinkActive="linkActive"><a class="dropdown-item" routerLink="/whoWeAre3" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close"> {{'home.team' | translate}}</a></li>
+  </ul>
+
+</li>
+<li class="nav-item dropdown" routerLinkActive="linkActive">
+  <a routerLink="/location" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close">
+    {{'home.services' | translate}}
+  </a>
+
+</li>
+<li class="nav-item dropdown" routerLinkActive="linkActive">
+  <a routerLink="/services"  (click)=" scrollToTop()"data-bs-dismiss="offcanvas" aria-label="Close" >
+    {{'home.servicess' | translate}}
+  </a>
+
+</li>
+
+<li class="nav-item dropdown" >
+  <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+    {{'home.Commercialfranchise' | translate}}
+  </a>
+
+  <ul class="dropdown-menu text-Align">
+    <li routerLinkActive="linkActive"><a class="dropdown-item" routerLink="/join-us" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close">   {{'home.Obtaining' | translate}}  </a></li>
+    <li routerLinkActive="linkActive"><a class="dropdown-item" routerLink="/whoWeAre4" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close">   {{'home.offer' | translate}}    </a></li>
+    <li routerLinkActive="linkActive"><a class="dropdown-item" routerLink="/franchise-program" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close">   {{'home.Commercialfranchisee' | translate}}  </a></li>
+  </ul>
+
+</li>
+
+
+
+<li class="nav-item" routerLinkActive="linkActive">
+  <a class="nav-link" routerLink="app-golf" (click)=" scrollToTop()" data-bs-dismiss="offcanvas" aria-label="Close"> {{'home.app' | translate}} </a>
+</li>
+
+</ul>
+<div class="py-3">
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+</div>
+</div>
+
+
+  <div class="my-2">
+    <!-- <h6>ابقى معنا</h6> -->
+    <div>
+      <div class="d-flex justify-content-start align-items-center">
+        <div class="storesLogo ">
+          <img src="assets/images/footer/app-store.png"  class="w-100 "  alt="image">
+
+        </div>
+
+        <div class="storesLogo rounded">
+          <a href="https://play.google.com/store/apps/details?id=com.ksa.gulfusers&pcampaignid=web_share" target="_blank">
+            <img style="height: 59px;margin: -8px 5px;" class="w-100" src="assets/images/footer/play-store-logo-nisi-filters-australia-11.png"/>
+
+          </a>        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="w-100 ">
+    <ul class=" navbar-nav  ulDirection  links">
+
+      <li class="nav-item" routerLinkActive="linkActive">
+        <a class="nav-link" routerLink="/join-us" data-bs-dismiss="offcanvas" aria-label="Close">{{'home.recruitment' | translate}}</a>
+      </li>
+
+      <li style="padding: 0px 20px;" class="nav-item" >
+        <a class="nav-link" routerLink="/contact-us" routerLinkActive="linkActive" data-bs-dismiss="offcanvas" aria-label="Close"> {{'home.Connectwitus' | translate}}</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="linkActive" data-bs-dismiss="offcanvas" aria-label="Close">
+        <!-- <a class="nav-link">AR</a> -->
+         <app-translate></app-translate>
+      </li>
+
+
+    </ul>
+  </div>
+
+  <div class="icons my-3  w-25 d-flex justify-content-between column-reverse">
+    <span style="    font-size: 30px;
+    margin: 0px 17px;"class="icon">
+        <i class="fa-brands fa-x-twitter"></i>
+
+    </span>
+
+    <span style="    font-size: 30px;
+    margin: 0px 17px;" class="icon">
+        <i class="fa-brands fa-instagram"></i>
+    </span>
+
+
+
+
+</div>
+
+</div>
+
+  </div>
+</nav>

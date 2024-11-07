@@ -1,0 +1,41 @@
+<section class=" sec-3 container mb-5 position-relative">
+  <div class="text-center">
+    <h1 class="text-image">منتجاتنا الجديدة</h1>
+    <p class="title-info">مصممة لتناسب جميع الأذواق!</p>
+  </div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-container   *ngFor="let product of products">
+      <ng-template class="card-img col-md-4"  carouselSlide>
+        <div class="card-img col-md-4">
+          <a href="productDetails.html">
+            <div class="card position-relative">
+              <img
+                alt="وصف قصير لصورة الصفحة الرئيسية"
+                [src]="product.image"
+                class="card-img-top"
+              />
+              <button class="fav-btn-icon" aria-label="Add to favorites">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-8 p-0">
+                    <p class="fw-600">{{ product.name }}</p>
+                  </div>
+                  <div class="col-4 p-0 text-end">
+                    <p class="fw-700">{{ product.price }} SAR</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <button class="myBtn">
+                    اضف الي عربة التسوق <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</section>

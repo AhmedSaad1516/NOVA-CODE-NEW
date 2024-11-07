@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://whitesmoke-dov679358.hostingersite.com/api/v2",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

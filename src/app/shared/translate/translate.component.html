@@ -1,0 +1,7 @@
+<a class="nav-link">
+  <span class="spans" style="padding: 0px 10px;" *ngIf="lang === 'ar'">EN</span>
+  <img   *ngIf="lang === 'ar'" (click)="changeLanguage()" src="assets/images/navbar/language-svgrepo-com.svg" class=" lag fi fi-us fis rounded-circle fs-3" alt="">
+
+  <span class="spans" style="padding: 0px 10px;" *ngIf="lang === 'en'">ع</span>
+  <img  *ngIf="lang === 'en'" (click)="changeLanguage()" src="assets/images/navbar/language-svgrepo-com.svg"class="lag fi fi-us fis rounded-circle fs-3" alt="">
+</a>

@@ -1,0 +1,115 @@
+<header id="Home">
+  <nav class="container navbar navbar-expand-lg">
+      <ul class="navbar-nav navbar-nav-desktop right-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html" aria-label="Go to Home Page">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html" aria-label="Learn About Us">من نحن</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropdown-toggle3" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="View Our Products">
+                  منتجاتنا
+              </a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a class="dropdown-item" target="_top" href="girls-product.html" aria-label="View Girls' Products">منتجات البنات</a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="women-product.html" aria-label="View Women's Products">منتجات نسائية</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contactUs.html" aria-label="Contact Us">تواصل معنا</a>
+          </li>
+      </ul>
+      <div class="LOGO">
+          <a href="#" aria-label="Visit Home">
+              <img alt="Logo Here" src="../../../../assets/imgs/logo.png" class="img-fluid" aria-hidden="true">
+          </a>
+      </div>
+      <ul class="navbar-nav navbar-nav-desktop ms-auto mb-2 mb-lg-0">
+        <li class="nav-item cart">
+          <a class="nav-link" aria-current="page" href="cart.html" aria-label="View Cart">
+            <i class="fas fa-cart-shopping">
+              <span class="cart-count">5</span>
+            </i>
+          </a>
+        </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="wishlist.html" aria-label="View Wishlist"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" aria-label="User Profile"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language Options">
+                  AR
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" aria-label="Action">Action</a></li>
+                  <li><a class="dropdown-item" href="#" aria-label="Another action">Another action</a></li>
+                  <li>
+                      <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#" aria-label="Something else here">Something else here</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <div class="d-flex">
+                  <a class="dropdown-toggle dropdown-toggle-translate nav-link-translate" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select Currency">
+                      KWD
+                      <img alt="Kuwait Flag" class="img-logo-translate" src="../../../../assets/imgs/kuwait-flag.svg" aria-hidden="true">
+                  </a>
+              </div>
+          </li>
+      </ul>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-label="Toggle Sidebar Menu">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </nav>
+
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+      <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="texts" aria-current="page" href="index.html" aria-label="Go to Home Page">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                  <a class="texts" href="about.html" aria-label="Learn About Us">من نحن</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="texts dropdown-toggle dropdown-toggle3" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false" aria-label="View Our Products">
+                      منتجاتنا
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li>
+                          <a class="dropdown-item" target="_top" href="girls-product.html" aria-label="View Girls' Products">منتجات البنات</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="women-product.html" aria-label="View Women's Products">منتجات نسائية</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="texts" href="contactUs.html" aria-label="Contact Us">تواصل معنا</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+</header>
+<div class="navb-phones d-none">
+  <app-navbar-mobile></app-navbar-mobile>
+</div>
